@@ -25,7 +25,8 @@ class Death(Scene):
 	
 	orbituaries = [
 		"The greatest programmer ever known has died today.",
-		"Our hero is dead. The Gothons have one."
+		"Our hero is dead. The Gothons have one.",
+		"Live Like a Hero IDIOT San"
 	]
 
 	def enter(self):
@@ -33,7 +34,7 @@ class Death(Scene):
 		exit(1)
 
 class CentralCorridor(Scene):
-	"This is the starting point and has a Gothon already standing there they have to defeat with a joke before continuing."
+	"This is the starting point and has a Gothon already standing there they have to be defeated with a joke before continuing."
 
 	def enter(self):
 		print "A Gothon jumps out at you and is about to shoot. What do you do? [shoot!, dodge!, tell a joke]"
@@ -52,7 +53,7 @@ class LaserWeaponArmory(Scene):
 	"This is where the hero gets a neutron bomb to blow up the ship before getting to the escape pod. It has a keypad he has to guess the number for."
 
 	def enter(self):
-		print "You find an armory but the laser weapons are kept in a safe with a 3 digit code."
+		print "You have defeated the Gothon with a joke \nNow you look around the ship for the armourary to get the bomb to destroy the ship \nAt last you find the armory but the laser weapons are kept in a safe with a 3 digit code."
 		attempts = 0
 		code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
 		print "code = ", code
