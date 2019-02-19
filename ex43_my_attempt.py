@@ -195,12 +195,6 @@ class Escape_Pod(Scene):
             
             return "finished"
 
-
-
-
-
-
-
 class Map(object):
     scenes = {
 
